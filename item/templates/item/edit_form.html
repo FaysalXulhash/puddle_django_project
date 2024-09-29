@@ -1,11 +1,11 @@
 {% extends "core/base.html" %}
 
-{% block title %}New Item{% endblock  %}
+{% block title %}Edit{% endblock  %}
 
 {% block content %}
 
     <div class="w-1/2 my-6 p-6 mx-auto bg-gray-100 rounded-xl">
-        <h1 class="mb-6 text-3xl text-center">Add New Item</h1>
+        <h1 class="mb-6 text-3xl text-center">Edit Item</h1>
         <hr>
         <form action="" method='post' enctype="multipart/form-data">
             {% csrf_token %}
@@ -20,10 +20,8 @@
                 </div>
             {% endif %}
             <div class="flex justify-center items-center">
-                <button class="mt-6 py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white content-center">Add Item</button>
+                <button class="mt-6 py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white ">Update Information</button>
             </div> 
-
-            
         </form>
         
     </div>
