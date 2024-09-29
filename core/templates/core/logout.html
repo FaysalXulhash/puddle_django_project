@@ -1,0 +1,12 @@
+{% extends "core/base.html" %}
+{% block content %}
+{% csrf_token %}
+    <div class="px-10 py-10 mx-auto text-center max-w-sm rounded overflow-hidden shadow-lg bg-red-200 mb-4">
+        <h2>You have been logged out</h2>
+    <div class="border-top pt-5 mb-4">
+        <small class="text-muted">
+            <a href="{% url 'login' %}" class="mt-8 px-6 py-3 text-lg font-semibold bg-green-500 text-white rounded-xl hover:bg-green-700" >Log In Again</a>
+        </small>
+    </div>
+    </div>
+{% endblock content %}
