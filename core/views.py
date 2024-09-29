@@ -27,7 +27,3 @@ def signup(request):
         form = SignUpForm()
     return render(request, 'core/signup.html', {'form':form})
 
-# logout 
-def logout_view(request):
-    logout(request)
-   # redirect('login')
