@@ -34,7 +34,7 @@ class ItemForm(forms.ModelForm):
 class ItemEditForm(forms.ModelForm):   
     class Meta:
         model = Item
-        fields = ('category', 'name', 'description', 'price', 'image')
+        fields = ('category', 'name', 'description', 'price', 'image', 'is_sold')
 
         widgets = {
             'category' : forms.Select(attrs = {
